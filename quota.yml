@@ -4,8 +4,8 @@ metadata:
   name: rq
 spec:
   hard:
-    limits.cpu: "500m"
-    requests.cpu: "100m"
-    limits.memory: "64Mi"
-    requests.memory: "32Mi"
+    limits.cpu: "2"
+    requests.cpu: "500m"
+    limits.memory: "4Gi"
+    requests.memory: "2Gi"
     
