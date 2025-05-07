@@ -1,0 +1,19 @@
+apiVesrion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: hpa
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: deploy
+
+    minReplicas: 2
+    maxReplicas: 4
+    metrics:
+      - type: Resources
+        resource:
+          name: cpu
+          target:
+            type: Utlization
+            averageUtilization: 60
