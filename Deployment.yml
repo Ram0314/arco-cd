@@ -19,7 +19,7 @@ spec:
           ports:
             - containerPort: 80  
           resources:
-            request:
+            requests:
                cpu: "10m"
                memory: "1Mi"
             limits:
