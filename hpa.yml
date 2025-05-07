@@ -1,4 +1,4 @@
-apiVesrion: autoscaling/v2
+apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
 metadata:
   name: hpa
@@ -8,12 +8,13 @@ spec:
     kind: Deployment
     name: deploy
 
-    minReplicas: 2
-    maxReplicas: 4
-    metrics:
-      - type: Resources
-        resource:
-          name: cpu
-          target:
-            type: Utlization
-            averageUtilization: 60
+  minReplicas: 2
+  maxReplicas: 4
+  metrics:
+    - type: Resource
+      resource:
+        name: cpu
+        target:
+          type: Utilization
+          averageUtilization: 60
+
