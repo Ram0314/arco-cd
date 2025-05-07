@@ -15,7 +15,7 @@ spec:
     spec: 
       containers:
         - name: cont1
-          image: reddy0314/images:res
+          image: reddy0314/images:dm
           ports:
             - containerPort: 80  
           resources:
