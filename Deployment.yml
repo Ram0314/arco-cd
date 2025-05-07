@@ -17,4 +17,11 @@ spec:
         - name: cont1
           image: reddy0314/images:res
           ports:
-            - containerPort: 80                                                                                                          1,3           Top
+            - containerPort: 80  
+          resources:
+            request:
+               cpu: "10m"
+               memory: "1Mi"
+            limits:
+               cpu: "100m"
+               memory: "2Mi"
