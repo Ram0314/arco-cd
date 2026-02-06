@@ -15,7 +15,7 @@ spec:
     spec: 
       containers:
         - name: cont1
-          image: reddy0314/images:dm
+          image: reddy0314/mytetrisgame:v0
           ports:
             - containerPort: 80  
           resources:
