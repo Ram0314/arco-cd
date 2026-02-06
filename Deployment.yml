@@ -17,7 +17,7 @@ spec:
         - name: cont1
           image: reddy0314/mytetrisgame:v0
           ports:
-            - containerPort: 80  
+            - containerPort: 3000  
           resources:
             requests:
                cpu: "250m"
